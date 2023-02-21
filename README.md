@@ -1,5 +1,5 @@
 # BMF
-February 19, 2023
+February 21, 2023
 
 Software package of the Bayesian mutation finder (BMF). 
 
