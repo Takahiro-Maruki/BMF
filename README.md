@@ -1,5 +1,5 @@
 # BMF
-February 21, 2023
+February 22, 2023
 
 Software package of the Bayesian mutation finder (BMF). 
 
@@ -16,4 +16,14 @@ This software is for identifying mutations from high-throughput sequencing data 
 If you use this software, please cite the following paper:
 
 Maruki, T, Ozere, A, and Cristescu, M. E., Genome-wide identification of single nucleotide mutations from time-series mutation accumulation data. In prep.
+
+**Prerequisite**
+
+The installation of the following is necessary.  gcc and Perl are generally installed in a Linux server, where analysis of high-throughput sequencing data is generally carried out.
+
+1. gcc (https://gcc.gnu.org/)
+
+2. Perl (https://www.perl.org/)
+
+3. Samtools (http://www.htslib.org/)
 
