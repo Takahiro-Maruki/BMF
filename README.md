@@ -25,5 +25,5 @@ The installation of the following is necessary.  gcc and Perl are generally pre-
 
 2. Perl (https://www.perl.org/)
 
-3. Samtools (http://www.htslib.org/)
+3. Samtools (Li et al. 2009) (http://www.htslib.org/)
 
