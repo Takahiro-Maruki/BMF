@@ -1,6 +1,8 @@
 # BMF
 February 22, 2023
 
+Author: Takahiro Maruki
+
 Software package of the Bayesian mutation finder (BMF). 
 
 **This pacakge can be downloaded by clicking "Code" at this web site.**
