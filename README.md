@@ -19,7 +19,7 @@ Maruki, T, Ozere, A, and Cristescu, M. E., Genome-wide identification of single 
 
 **Prerequisite**
 
-The installation of the following is necessary.  gcc and Perl are generally installed in a Linux server, where analysis of high-throughput sequencing data is generally carried out.
+The installation of the following is necessary.  gcc and Perl are generally pre-installed in a Linux server, where analysis of high-throughput sequencing data is generally carried out.
 
 1. gcc (https://gcc.gnu.org/)
 
