@@ -33,22 +33,22 @@ The installation of the following is necessary.  gcc and Perl are generally pre-
 
 Compile the Perl script and C++ programs in the Programs directory.
 
-1. Ext_Ref_Nuc.pl
+1. Ext_Ref_Nuc.pl <br />
 chmod u+x Ext_Ref_Nuc.pl
 
-2. mpileup2pro.cpp
+2. mpileup2pro.cpp <br />
 g++ -o mpileup2pro mpileup2pro.cpp -lm
 
-3. HGC.cpp
+3. HGC.cpp <br />
 g++ -o HGC HGC.cpp -lm
 
-4. Rem_Multi_Allelic.cpp
+4. Rem_Multi_Allelic.cpp <br />
 g++ -o Rem_Multi_Allelic Rem_Multi_Allelic.cpp -lm
 
-5. GFE_v3.0.cpp
+5. GFE_v3.0.cpp <br />
 g++ -o GFE_v3.0 GFE_v3.0.cpp -lm
 
-6. bmf.cpp
+6. bmf.cpp <br />
 g++ -o bmf bmf.cpp -lm
 
 
