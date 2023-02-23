@@ -1,5 +1,5 @@
 # BMF
-February 22, 2023
+February 23, 2023
 
 Author: Takahiro Maruki
 
@@ -28,4 +28,27 @@ The installation of the following is necessary.  gcc and Perl are generally pre-
 2. Perl (https://www.perl.org/)
 
 3. Samtools (Li et al. 2009) (http://www.htslib.org/)
+
+**Installation**
+
+Compile the Perl script and C++ programs in the Programs directory.
+
+1. Ext_Ref_Nuc.pl
+chmod u+x Ext_Ref_Nuc.pl
+
+2. mpileup2pro.cpp
+g++ -o mpileup2pro mpileup2pro.cpp -lm
+
+3. HGC.cpp
+g++ -o HGC HGC.cpp -lm
+
+4. Rem_Multi_Allelic.cpp
+g++ -o Rem_Multi_Allelic Rem_Multi_Allelic.cpp -lm
+
+5. GFE_v3.0.cpp
+g++ -o GFE_v3.0 GFE_v3.0.cpp -lm
+
+6. bmf.cpp
+g++ -o bmf bmf.cpp -lm
+
 
