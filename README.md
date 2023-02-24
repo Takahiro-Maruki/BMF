@@ -1,5 +1,5 @@
 # BMF
-February 23, 2023
+February 24, 2023
 
 Author: Takahiro Maruki
 
@@ -55,26 +55,26 @@ g++ -o bmf bmf.cpp -lm
 
 In the following, the script and programs are assumed to be in $PATH.  If thay are not in $PATH, please specify the path (location) of each script/program to run it.
 
-1. Make an mpileup file from BAM files using the mpileup function of Samtools (Li et al. 2009).
+1. Make an mpileup file from BAM files using the mpileup function of Samtools (Li et al. 2009). <br />
 samtools mpileup -b BamList.txt -f Reference.fasta -o Out.mpileup
 
-2. Extract the nucleotide at every position of the reference sequence using Ext_Ref_Nuc.pl.
+2. Extract the nucleotide at every position of the reference sequence using Ext_Ref_Nuc.pl. <br />
 perl Ext_Ref_Nuc.pl Reference.fasta RefNuc.txt
 
-3. Make a pro file of nucleotide read counts from the mpileup file using mpileup2pro.
+3. Make a pro file of nucleotide read counts from the mpileup file using mpileup2pro. <br />
 mpileup2pro -ref RefNuc.txt -id IDs.txt -mp Out.mpileup -out Out.pro
 - The order of individuals listed in IDs.txt needs to be consistent with that in the mpileup file.
 
-4. Run HGC (Maruki and Lynch 2017) to identify tri- and tetra-allelic sites, setting the minimum required coverage to call individual genotypes at six.
+4. Run HGC (Maruki and Lynch 2017) to identify tri- and tetra-allelic sites, setting the minimum required coverage to call individual genotypes at six. <br />
 HGC -in Out.pro -min_cov 6 -out Out_mc6_HGC.txt
 
-5. Set the depth of coverage of all individuals to zero in the pro file at tri- and tetra-allelic sites using Rem_Multi_Allelic.
+5. Set the depth of coverage of all individuals to zero in the pro file at tri- and tetra-allelic sites using Rem_Multi_Allelic. <br />
 awk -v OFS='\t' '{if ($1 == "scaffold" || $4 != "NA" && $4 > 2) print $1, $2}' Out_mc6_HGC.txt > List_MA_Out_mc6_HGC.txt
 Rem_Multi_Allelic -pf Out.pro -mf List_MA_Out_mc6_HGC.txt -out MAR_Out.pro
 
-6. Run GFE_v3.0 (Maruki and Lynch 2015) in the c mode.
+6. Run GFE_v3.0 (Maruki and Lynch 2015) in the c mode. <br />
 GFE_v3.0 -in MAR_Out.pro -mode c -out Out_c_GFEv3.0.txt
 
-7. Run bmf, setting the minimum required coverage to call individual genotypes at eight and outputting reference nucleotides.
+7. Run bmf, setting the minimum required coverage to call individual genotypes at eight and outputting reference nucleotides. <br />
 bmf -in Out_c_GFEv3.0.txt -rn 1 -min_cov 8 -out Out_rn1_mc8_bmf.txt
 
