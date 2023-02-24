@@ -69,7 +69,7 @@ mpileup2pro -ref RefNuc.txt -id IDs.txt -mp Out.mpileup -out Out.pro
 HGC -in Out.pro -min_cov 6 -out Out_mc6_HGC.txt
 
 5. Set the depth of coverage of all individuals to zero in the pro file at tri- and tetra-allelic sites using Rem_Multi_Allelic. <br />
-awk -v OFS='\t' '{if ($1 == "scaffold" || $4 != "NA" && $4 > 2) print $1, $2}' Out_mc6_HGC.txt > List_MA_Out_mc6_HGC.txt
+awk -v OFS='\t' '{if ($1 == "scaffold" || $4 != "NA" && $4 > 2) print $1, $2}' Out_mc6_HGC.txt > List_MA_Out_mc6_HGC.txt <br />
 Rem_Multi_Allelic -pf Out.pro -mf List_MA_Out_mc6_HGC.txt -out MAR_Out.pro
 
 6. Run GFE_v3.0 (Maruki and Lynch 2015) in the c mode. <br />
