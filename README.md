@@ -71,10 +71,10 @@ GFE_v3.0 -in MAR_Out.pro -mode c -out Out_c_GFEv3.0.txt
 
 7. Run bmf, setting the minimum required coverage to call individual genotypes at eight and outputting reference nucleotides. <br />
 bmf -in Out_c_GFEv3.0.txt -rn 1 -min_cov 8 -out Out_rn1_mc8_bmf.txt
-- The `-in', and `-out' options specify the input file and output file name, respectively. <br />
-- The minimum and maximum coverage for calling individual genotypes can be specified by the `-min_cov' and `-max_cov', respectively.  The default values for the minimum and maximum coverage are 1 and 2,000,000,000, respectively. <br />
-- The critical values for the heterozygous and homozygous cumulative binomial probabilities in the binomial test can be specified by `-cv_het' and `-cv_hom' options, respectively.  The default values for the heterozygous and homozygous cumulative binomial probabilities are 0.025 and 0.05, respectively.
-- Results at all sites in the reference sequence can be shown in the output file by setting the `-as' option at one (1).  The input file also needs to contain all sites in the reference sequence in this case, which can be done by running GFE_v3.0 in the `c' mode and setting the `as' option at one (1). <br />
+- The `-in`, and `-out` options specify the input and output file names, respectively. <br />
+- The minimum and maximum coverage for calling individual genotypes can be specified by the `-min_cov` and `-max_cov`, respectively.  The default values for the minimum and maximum coverage are 1 and 2,000,000,000, respectively. <br />
+- The critical values for the heterozygous and homozygous cumulative binomial probabilities in the binomial test can be specified by `-cv_het` and `-cv_hom` options, respectively.  The default values for the heterozygous and homozygous cumulative binomial probabilities are 0.025 and 0.05, respectively.
+- Results at all sites in the reference sequence can be shown in the output file by setting the `-as` option at one (1).  The input file also needs to contain all sites in the reference sequence in this case, which can be done by running GFE_v3.0 in the `c` mode and setting the `as` option at one (1). <br />
 - A usage help message explaining these options can be shown by typing the following command: <br />
 bmf -h
 
