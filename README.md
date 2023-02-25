@@ -84,9 +84,14 @@ This program is freely available; and can be redistributed and/or modified under
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 For a copy of the GNU General Public License write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 
-Contact
+**Contact**
+
 If you have difficulty using this software, please send the following information to Takahiro Maruki (takahiro.maruki@mcgill.ca):
+
 1. Brief explanation of the problem.
+
 2. Command used.
+
 3. Part of the input file.
+
 4. Part of the output file.
