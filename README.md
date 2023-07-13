@@ -1,5 +1,5 @@
 # BMF
-February 25, 2023
+July 13, 2023
 
 Author: Takahiro Maruki
 
@@ -83,7 +83,7 @@ bmf -h
 
 If you use this software, please cite the following paper:
 
-Maruki, T, Ozere, A, and Cristescu, M. E., Genome-wide identification of single nucleotide mutations from time-series mutation accumulation data. In prep.
+Maruki, T, Ozere, A, and Cristescu, M. E., Genome-wide identification of single nucleotide mutations from time-series mutation accumulation data. In revision
 
 **Copyright Notice**
 
