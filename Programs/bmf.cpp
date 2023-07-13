@@ -1,4 +1,4 @@
-/* Updated on 02/20/23 */
+/* Updated on 07/13/23 */
 
 /*
 
@@ -12,7 +12,7 @@ to the input at all sites can be printed out by setting the `-as' option
 at one.  Reference nucleotides can be printed out by setting the `-rn'
 option at one.  The ancestral genotype is inferred from the genotype
 frequency estimates.  Genotype calls are refined using a binomial test
-assmuing the inferred ancestral genotype in the null hypothesis.
+assuming the inferred ancestral genotype in the null hypothesis.
 
 */
 
@@ -63,7 +63,7 @@ int main(int argc, char *argv[]) {
 	int gp = 0;	// indicator to specify whether genotype probabilities are shown (0: do not show, 1: show)
 	int as = 0;	// indicator to specify whether the output at all sites is shown (0: do not show, 1: show)
 	int rn = 1;	// indicator to specify whether the output includes reference nucleotides (0: do not include, 1: include)
-	double cv_het = 0.025;	// critical value for heteozygous cumulative binomial probability
+	double cv_het = 0.025;	// critical value for heterozygous cumulative binomial probability
 	double cv_hom = 0.05;  // critical value for the homozygous cumulative binomial probability
 	int print_help = 0;
 
@@ -159,7 +159,7 @@ int main(int argc, char *argv[]) {
 	string anc;	// ancestral genotype
 	double prob_ind_het, prob_ind_hom;      // cumulative probabilities of heterozygous and homozygous individual genotypes
 	int dg;	// depth counter
-	int f_count_geno[4];	// genotype call counts excluding excluding thoese containing mutations
+	int f_count_geno[4];	// genotype call counts excluding those containing mutations
 	int f_major_allele_count, f_minor_allele_count;	// filtered allele counts
 	int num_mut_lines;	// number of MA lines with mutations
 	double base_prob_ind_hom;	// baseline probability of a homozygous individual genotype
