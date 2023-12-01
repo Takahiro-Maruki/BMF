@@ -1,5 +1,5 @@
 # BMF
-July 13, 2023
+November 30, 2023
 
 Author: Takahiro Maruki
 
@@ -42,8 +42,8 @@ g++ -o Rem_Multi_Allelic Rem_Multi_Allelic.cpp -lm
 5. GFE_v3.0.cpp <br />
 g++ -o GFE_v3.0 GFE_v3.0.cpp -lm
 
-6. bmf.cpp <br />
-g++ -o bmf bmf.cpp -lm
+6. bmf_v1.0.cpp <br />
+g++ -o bmf_v1.0 bmf_v1.0.cpp -lm
 
 **Usage instructions**
 
@@ -69,8 +69,8 @@ Rem_Multi_Allelic -pf Out.pro -mf List_MA_Out_mc6_HGC.txt -out MAR_Out.pro
 6. Run GFE_v3.0 (Maruki and Lynch 2015) in the c mode. <br />
 GFE_v3.0 -in MAR_Out.pro -mode c -out Out_c_GFEv3.0.txt
 
-7. Run bmf, setting the minimum required coverage to call individual genotypes at eight and outputting reference nucleotides. <br />
-bmf -in Out_c_GFEv3.0.txt -rn 1 -min_cov 8 -out Out_rn1_mc8_bmf.txt
+7. Run bmf_v1.0, setting the minimum required coverage to call individual genotypes at eight and outputting reference nucleotides. <br />
+bmf_v1.0 -in Out_c_GFEv3.0.txt -rn 1 -min_cov 8 -out Out_rn1_mc8_bmfv1.0.txt
 - The `-in`, and `-out` options specify the input and output file names, respectively. <br />
 - The reference nucleotides can be shown in the output by setting the `-rn` option at one (1).
 - The minimum and maximum coverage for calling individual genotypes can be specified by the `-min_cov` and `-max_cov`, respectively.  The default values for the minimum and maximum coverage are 1 and 2,000,000,000, respectively. <br />
@@ -83,7 +83,7 @@ bmf -h
 
 If you use this software, please cite the following paper:
 
-Maruki, T, Ozere, A, and Cristescu, M. E., Genome-wide identification of single nucleotide mutations from time-series mutation accumulation data. In revision
+Maruki, T, Ozere, A, and Cristescu, M. E., Genome-wide identification of single nucleotide mutations from time-series *Daphnia pulex* mutation accumulation data. In prep.
 
 **Copyright Notice**
 
