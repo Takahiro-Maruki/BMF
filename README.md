@@ -77,7 +77,7 @@ bmf_v1.0 -in Out_c_GFEv3.0.txt -rn 1 -min_cov 8 -out Out_rn1_mc8_bmfv1.0.txt
 - The critical values for the heterozygous and homozygous cumulative binomial probabilities in the binomial test can be specified by `-cv_het` and `-cv_hom` options, respectively.  The default values for the heterozygous and homozygous cumulative binomial probabilities are 0.025 and 0.05, respectively.
 - Results at all sites in the reference sequence can be shown in the output file by setting the `-as` option at one (1).  The input file also needs to contain all sites in the reference sequence in this case, which can be done by running GFE_v3.0 in the `c` mode and setting the `-as` option at one (1). <br />
 - A usage help message explaining these options can be shown by typing the following command: <br />
-bmf -h
+bmf_v1.0 -h
 
 **Reference**
 
