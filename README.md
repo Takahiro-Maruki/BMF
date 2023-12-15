@@ -83,7 +83,7 @@ bmf_v1.0 -h
 
 If you use this software, please cite the following paper:
 
-Maruki, T, Ozere, A, and Cristescu, M. E., Genome-wide identification of single nucleotide mutations from time-series *Daphnia pulex* mutation accumulation data. In prep.
+Maruki, T, Ozere, A, and Cristescu, M. E., Performance and refined single nucleotide mutation rates by the Bayesian Mutation Finder using time-series mutation accumulation data and computer simulation. In prep.
 
 **Copyright Notice**
 
