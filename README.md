@@ -1,5 +1,5 @@
 # BMF
-December 16, 2023
+January 15, 2024
 
 Author: Takahiro Maruki
 
@@ -83,7 +83,7 @@ bmf_v1.0 -h
 
 If you use this software, please cite the following paper:
 
-Maruki, T, Ozere, A, and Cristescu, M. E., Performance and refined single nucleotide mutation rates by the Bayesian Mutation Finder using time-series mutation accumulation data and computer simulation. In prep.
+Maruki, T, Ozere, A, and Cristescu, M. E., What can we infer about mutation calling by using time-series mutation accumulation data and a Bayesian Mutation Finder? In prep.
 
 **Copyright Notice**
 
